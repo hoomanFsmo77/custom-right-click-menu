@@ -1,0 +1,47 @@
+body{
+    background: #ccc;
+    font-family: "Cairo Light",sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+li{
+    list-style-type: none;
+}
+.context-menu{
+    position: relative;
+    width: 200px;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.context-menu ul{
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+}
+.context-menu ul li:first-child{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.context-menu ul li:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.context-menu ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 2;
+    cursor: pointer;
+    transition: background-color 200ms linear;
+    padding-left: 0.5rem;
+
+}
+.context-menu ul li:hover{
+    background-color: #efefef;
+
+}
+.context-menu ul li:last-child:hover{
+    color: red;
+}
